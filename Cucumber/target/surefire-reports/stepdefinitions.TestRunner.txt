@@ -1,9 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: stepdefinitions.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.192 sec <<< FAILURE!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.177 sec <<< FAILURE!
 initializationError(stepdefinitions.TestRunner)  Time elapsed: 0.004 sec  <<< ERROR!
-java.lang.IllegalArgumentException: path must exist: /home/coder/project/workspace/Cucumber/src/test/java/stepdefinitions/feedback.feature
+java.lang.IllegalArgumentException: path must exist: /home/coder/project/workspace/Cucumber/src/test/features
 	at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:42)
 	at io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:26)
 	at io.cucumber.core.resource.ResourceScanner.findResourcesForUri(ResourceScanner.java:109)
