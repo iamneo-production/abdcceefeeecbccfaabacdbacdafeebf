@@ -113,7 +113,7 @@ Caused by: io.cucumber.core.gherkin.vintage.internal.gherkin.ParserException$Com
 	at io.cucumber.core.gherkin.vintage.GherkinVintageFeatureParser.parseGherkin5(GherkinVintageFeatureParser.java:29)
 	... 37 more
 </error>
-    <system-err>Aug 30, 2023 12:39:24 PM io.cucumber.junit.Cucumber &lt;init&gt;
+    <system-err>Aug 30, 2023 12:46:41 PM io.cucumber.junit.Cucumber &lt;init&gt;
 WARNING: By default Cucumber is running in --non-strict mode.
 This default will change to --strict and --non-strict will be removed.
 You can use --strict or @CucumberOptions(strict = true) to suppress this warning
