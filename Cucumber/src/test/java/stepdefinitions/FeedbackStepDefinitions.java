@@ -3,6 +3,7 @@ package stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.After;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -61,6 +62,8 @@ public class FeedbackStepDefinitions {
     @After
     public void tearDown() {
         // Close the browser after each scenario
-        driver.quit();
+        if (driver != null) {
+            driver.quit();
+        }
     }
 }
