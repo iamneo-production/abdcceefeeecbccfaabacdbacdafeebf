@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="stepdefinitions.TestRunner" time="0.004" errors="1" skipped="0">
+<testsuite tests="1" failures="0" name="stepdefinitions.TestRunner" time="0.327" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.18+10-post-Debian-1deb11u1"/>
@@ -59,26 +59,14 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="stepdefinitions.TestRunner" name="initializationError" time="0.004">
-    <error message="path must exist: /home/coder/project/workspace/Cucumber/src/test/resources/features" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: path must exist: /home/coder/project/workspace/Cucumber/src/test/resources/features
-	at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:42)
-	at io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:26)
-	at io.cucumber.core.resource.ResourceScanner.findResourcesForUri(ResourceScanner.java:109)
-	at io.cucumber.core.resource.ResourceScanner.scanForResourcesUri(ResourceScanner.java:86)
-	at io.cucumber.core.runtime.FeaturePathFeatureSupplier.loadFeatures(FeaturePathFeatureSupplier.java:61)
-	at io.cucumber.core.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:45)
-	at io.cucumber.junit.Cucumber.&lt;init&gt;(Cucumber.java:156)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:31)
-	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:24)
-	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:57)
-	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:29)
-	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:57)
-	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:24)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:250)
+  <testcase classname="org.apache.maven.surefire.junit4.JUnit4Provider" name="stepdefinitions.TestRunner" time="0.327">
+    <error message="&apos;org.junit.runner.Description org.junit.runner.Description.createSuiteDescription(java.lang.String, java.io.Serializable, java.lang.annotation.Annotation[])&apos;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: &apos;org.junit.runner.Description org.junit.runner.Description.createSuiteDescription(java.lang.String, java.io.Serializable, java.lang.annotation.Annotation[])&apos;
+	at io.cucumber.junit.FeatureRunner.getDescription(FeatureRunner.java:59)
+	at io.cucumber.junit.Cucumber.describeChild(Cucumber.java:180)
+	at io.cucumber.junit.Cucumber.describeChild(Cucumber.java:83)
+	at org.junit.runners.ParentRunner.getDescription(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:296)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -91,7 +79,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </error>
-    <system-err>Aug 30, 2023 12:01:02 PM io.cucumber.junit.Cucumber &lt;init&gt;
+    <system-err>Aug 30, 2023 12:07:01 PM io.cucumber.junit.Cucumber &lt;init&gt;
 WARNING: By default Cucumber is running in --non-strict mode.
 This default will change to --strict and --non-strict will be removed.
 You can use --strict or @CucumberOptions(strict = true) to suppress this warning
