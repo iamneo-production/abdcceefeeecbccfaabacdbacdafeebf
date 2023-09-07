@@ -1,4 +1,4 @@
-package your.package.name; // Replace with your actual package name
+package your.srikanth.name; // Replace with your actual package name
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
